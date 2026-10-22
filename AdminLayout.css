@@ -1,0 +1,163 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #20243a;
+  background: #f5f6fa;
+}
+
+.admin-layout {
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 245px;
+  padding: 28px 18px;
+  background: #202344;
+  color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.menu-label {
+  color: #a6aac7;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: 0 0 15px 10px;
+}
+
+.sidebar-nav {
+  display: grid;
+  gap: 8px;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  border-radius: 8px;
+  color: #d5d7e8;
+  text-decoration: none;
+}
+
+.sidebar-nav a.active {
+  color: white;
+  background: #6965e8;
+}
+
+.main-area {
+  margin-left: 245px;
+  min-width: 0;
+}
+
+.topbar {
+  min-height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 30px;
+  background: white;
+  border-bottom: 1px solid #e9eaf1;
+}
+
+.topbar p {
+  margin: 6px 0 0;
+  color: #85899c;
+  font-size: 13px;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notification-button {
+  background: white;
+  border: 1px solid #e5e6ed;
+  border-radius: 9px;
+  padding: 9px;
+  cursor: pointer;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #514bd4;
+  background: #e9e8ff;
+  font-weight: bold;
+}
+
+.profile-text {
+  display: grid;
+  gap: 4px;
+}
+
+.profile-text span {
+  color: #85899c;
+  font-size: 12px;
+}
+
+.page-content {
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .brand {
+    margin-bottom: 15px;
+  }
+
+  .menu-label {
+    display: none;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sidebar-nav a {
+    padding: 10px;
+  }
+
+  .main-area {
+    margin-left: 0;
+  }
+
+  .topbar {
+    padding: 15px;
+  }
+
+  .profile-text {
+    display: none;
+  }
+
+  .page-content {
+    padding: 16px;
+  }
+}
+
