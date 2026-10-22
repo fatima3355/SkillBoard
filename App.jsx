@@ -1,4 +1,5 @@
 
+
 import {
   BrowserRouter,
   Routes,
@@ -6,13 +7,12 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import AdminLayout from "./components/AdminLayout";
-import Dashboard from "./components/Dashboard";
-import Learners from "./components/Learners";
-import Courses from "./components/Courses";
-import LearnerProfile from "./components/LearnerProfile";
-
-import CourseDetails from "./components/CourseDetails";
+import AdminLayout from "./AdminLayout";
+import Dashboard from "./Dashboard";
+import Learners from "./Learners";
+import Courses from "./Courses";
+import LearnerProfile from "./LearnerProfile";
+import CourseDetails from "./CourseDetails";
 
 function App() {
   return (
@@ -38,9 +38,4 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
 
